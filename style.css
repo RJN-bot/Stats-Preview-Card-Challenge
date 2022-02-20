@@ -4,7 +4,7 @@
   /* Primary */
   --Very-dark-blue: hsl(233, 47%, 7%);
   --Dark-desaturated-blue: hsl(244, 38%, 16%);
-  --Soft-violet: hsl(277, 64%, 61%);
+  --Soft-violet: rgb(170, 92, 219);
 
   /* Neutral */
   --White: hsl(0, 0%, 100%);
@@ -14,6 +14,75 @@
 
 html {
   font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Very-dark-blue);
+  font-family: "Inter", sans-serif;
+  color: var(--White);
+}
+
+.card {
+  width: 90vw;
+  background-color: var(--Dark-desaturated-blue);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.overlay {
+  /* background-color: rgba(170, 92, 219, 0.2); */
+  z-index: 1;
+}
+
+main {
+  text-align: center;
+  padding-inline: 2.2rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 1.2rem;
+  background-color: rgba(170, 92, 219, 0.2);
+}
+
+h1 {
+  font-size: 1.85rem;
+  margin: 1.25rem 0;
+}
+
+p {
+  line-height: 1.5;
+  color: var(--Slightly-less-transparent-white);
+  font-size: 1rem;
+}
+
+strong {
+  color: var(--Soft-violet);
+}
+
+.output {
+  margin: 1rem;
+  margin-top: 3rem;
+}
+
+.output h2 {
+  margin: 0;
+  margin-top: 0.8rem;
+}
+
+.output p {
+  color: var(--Slightly-transparent-white);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
 }
 
 /* attribution at the end of page */
