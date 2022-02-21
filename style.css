@@ -34,21 +34,30 @@ body {
   border-radius: 0.5rem;
 }
 
-.overlay {
-  /* background-color: rgba(170, 92, 219, 0.2); */
-  z-index: 1;
+img {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  /* margin-bottom: 1.2rem; */
+  background-color: rgba(170, 92, 219, 0.2);
+  position: relative;
+  opacity: 1;
+}
+
+.tint {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--Soft-violet);
+  border-radius: 0.5rem 0.5rem 0 0;
+  /* padding-bottom: 1.2rem; */
 }
 
 main {
   text-align: center;
   padding-inline: 2.2rem;
-}
-
-img {
-  width: 100%;
-  border-radius: 0.5rem 0.5rem 0 0;
-  margin-bottom: 1.2rem;
-  background-color: rgba(170, 92, 219, 0.2);
 }
 
 h1 {
