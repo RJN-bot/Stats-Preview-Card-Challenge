@@ -106,3 +106,23 @@ strong {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (min-width: 400px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  img {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .tint {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  img {
+    background-image: url(/images/image-header-desktop.jpg);
+  }
+  main {
+    padding-block: 3rem;
+  }
+}
